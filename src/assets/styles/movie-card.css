@@ -1,0 +1,124 @@
+.movielist__movie-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.movielist__item {
+  width: 280px;
+  height: 406px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 5px;
+  background-size: cover;
+  cursor: pointer;
+  transition: transform 300ms ease-in-out;
+}
+@media (min-width: 768px) {
+  .movielist__item {
+    width: 224px;
+    height: 324px;
+  }
+}
+@media (min-width: 1280px) {
+  .movielist__item {
+    width: 394px;
+    height: 574px;
+  }
+}
+
+.movielist__item:hover {
+  box-shadow: 1px 1px 6px 4px rgba(255, 107, 8, 0.42);
+  transform: scale(1.008);
+}
+
+.movielist__movie-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.movielist__information-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  padding: 12px;
+}
+
+.movielist__title-box {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+}
+@media (min-width: 1280px) {
+  .movielist__title-box {
+    font-size: 20px;
+  }
+}
+
+.movielist__movie-title {
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.movielist__movie-genre {
+  color: var(--grey);
+}
+
+.movielist__movie-rating {
+  display: flex;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  list-style-type: none;
+}
+@media (min-width: 768px) {
+  .movielist__movie-rating {
+    padding-top: 32px;
+    padding-left: 24px;
+  }
+}
+@media (min-width: 1280px) {
+  .movielist__movie-rating {
+    padding-top: 32px;
+    padding-left: 32px;
+  }
+}
+
+.movielist__nav-trends-box {
+  padding-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.movielist__nav-item-link {
+  color: var(--orange);
+}
+
+.movielist__nav-item-link,
+.movielist__nav-trends-title {
+  font-weight: 500;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .movielist__nav-item-link,
+  .movielist__nav-trends-title {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1280px) {
+  .movielist__nav-item-link,
+  .movielist__nav-trends-title {
+    font-size: 28px;
+  }
+}
+
+.movielist__nav-trends-title {
+  text-transform: uppercase;
+  color: var(--white);
+}
